@@ -4,10 +4,20 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true })); // to read the content from the html
 
+// if (process.env.NODE_ENV !== "production") {
+// this is done because we want dotenv to only load in the development environment
+// require("dotenv").config();
+// }
+require("dotenv").config();
+
 const Document = require("./models/Document");
 
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost/hastebin");
+mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true });
+
+const db = mongoose.connection;
+db.on("error", (error) => console.error(error)); // this is to check whether we are connected to our database
+db.once("open", () => console.log("Connected to Mongoose")); // this is going to run only once when we are connected to mongoose
 
 app.get("/", (req, res) => {
   const code = `Welcome to Hastebin!
