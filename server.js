@@ -4,11 +4,10 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true })); // to read the content from the html
 
-// if (process.env.NODE_ENV !== "production") {
-// this is done because we want dotenv to only load in the development environment
-// require("dotenv").config();
-// }
-require("dotenv").config();
+if (process.env.NODE_ENV !== "production") {
+  // this is done because we want dotenv to only load in the development environment
+  require("dotenv").config();
+}
 
 const Document = require("./models/Document");
 
