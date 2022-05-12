@@ -1,9 +1,8 @@
 # Hastebin
 
 > Create and share the text documents easily!
-> 
 
-## *GDSC Dev-a-thon 1.0*
+## _GDSC Dev-a-thon 1.0_
 
 ## Objective:
 
@@ -12,9 +11,9 @@ Create a simple tool to share the files and edit, duplicate and share the file w
 ## Tech Stack:
 
 - Node.js
-- Express       ( For running node **server**)
-- MongoDB  (Database for storing documents)
-- Ejs                 (For designing **client side**)
+- Express ( For running node **server**)
+- MongoDB (Database for storing documents)
+- Ejs (For designing **client side**)
 
 ## How to run:
 
@@ -22,12 +21,10 @@ Create a simple tool to share the files and edit, duplicate and share the file w
 - Unzip the file
 - Open the root folder in the vs code or any ide of your choice
 - Open terminal in this folder and write command
-    
-    ```jsx
-    npm i
-    npm start
-    ```
-    
+  ```jsx
+  npm i
+  npm start
+  ```
 - Now open the web browser of your choice, like Google chrome, Firefox or any other.
 - Copy paste this URL: [http://localhost:3000](http://localhost:3000/627a77bdb01179b69f026f10)
 - The application will start running and the database will be connected to your local MongoDB database
@@ -48,6 +45,6 @@ For this purpose highlight.js is used.
 
 **Submitted by**: Himanshu Pal (S20190010064)
 
-                                                           Thank you for using Hastebin!
+                               Thank you for using Hastebin!
 
-                                                      Created with ❤️ by Himanshu Pal.
+                              Created with ❤️ by Himanshu Pal.
