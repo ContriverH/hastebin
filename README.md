@@ -45,6 +45,6 @@ For this purpose highlight.js is used.
 
 **Submitted by**: Himanshu Pal (S20190010064)
 
-                               Thank you for using Hastebin!
+                                            Thank you for using Hastebin!
 
-                              Created with ❤️ by Himanshu Pal.
+                                          Created with ❤️ by Himanshu Pal.
